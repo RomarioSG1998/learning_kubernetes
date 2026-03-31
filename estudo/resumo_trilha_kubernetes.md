@@ -52,3 +52,5 @@ Nossa estrutura continha:
 - `pvc.yaml`: Separou 1 Gigabyte de armazenamento persistente.
 
 *Feito do Absoluto Zero! Ninguém digitou pra mim, eu mesmo criei os arquivos, caí nas armadilhas, debugei e venci!*
+## 🏆 Nota:
+*Para acelerar o domínio desta stack, utilizei o Gemini (IA) como tutor técnico e ferramenta de consulta. O foco foi validar conceitos de arquitetura, debugar erros de indentação em tempo real e simular cenários de deploy. Todo o código e documentação contidos aqui foram validados e implementados manualmente por mim, utilizando a IA para potencializar a curva de aprendizado.*
