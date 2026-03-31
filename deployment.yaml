@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: todo-list
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: web
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      volumes:
+      - name: meu-hd-fisico
+        persistentVolumeClaim:
+          claimName: pedido-hd-externo
+      containers:
+      - name: servidor-nginx
+        image: nginx:latest
+        ports:
+        - containerPort: 80
+        envFrom:
+        - configMapRef:
+            name: configuracoes-do-meu-sitte
+        volumeMounts:
+        - mountPath: "/dados-salvos"
+          name: meu-hd-fisico

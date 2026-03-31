@@ -1,0 +1,18 @@
+# IDEs e Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# Credenciais e arquivos de ambiente sensíveis (boas práticas de K8s)
+*.env
+.env
+secret*.yaml
+*secrets*.yaml
+minikube-linux-amd64
+kubectl

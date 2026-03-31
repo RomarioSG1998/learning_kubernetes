@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configuracoes-do-meu-sitte
+data:
+  titulo: "Meu site em kubernetes"
+  mensagem: "Nem o ceú é o limite!"

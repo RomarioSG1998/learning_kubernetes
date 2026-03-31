@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod 
+metadata:
+  name: nginx-declarativo
+  labels: 
+    app: todo-list
+spec:
+  containers:
+  - name: container-web
+    image: nginx:latest
+    ports:
+    - containerPort: 80
